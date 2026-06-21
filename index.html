@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cindy Tong</title>
-<meta name="description" content="Cindy Tong — designer and builder working across health tech, AI, and product.">
+<meta name="description" content="Cindy Tong, building at the intersection of healthcare, AI, and product.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -36,6 +36,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .hero-body{font-size:15px;line-height:1.9;color:var(--ink-mid);max-width:400px;margin-bottom:3rem;}
 .hero-cta{display:inline-flex;align-items:center;gap:0.75rem;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--terracotta);padding-bottom:4px;transition:color 0.2s,gap 0.2s;}
 .hero-cta:hover{color:var(--terracotta);gap:1.25rem;}
+.hero-cta-row{display:flex;align-items:center;gap:2rem;flex-wrap:wrap;}
+.hero-cta-secondary{font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-light);text-decoration:none;transition:color 0.2s;}
+.hero-cta-secondary:hover{color:var(--terracotta);}
 .hero-right{display:flex;flex-direction:column;gap:1rem;padding-top:6rem;}
 .hero-swatch{background:var(--terracotta-pale);border-radius:4px;height:300px;display:flex;align-items:flex-end;padding:1.75rem;position:relative;overflow:hidden;}
 .hero-swatch::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--terracotta-pale) 0%,#f0c8b5 100%);opacity:0.5;}
@@ -96,9 +99,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 
 /* ABOUT */
 .about{max-width:1200px;margin:0 auto;padding:6rem 3.5rem;display:grid;grid-template-columns:1fr 1.8fr;gap:6rem;align-items:start;}
-.about-portrait{width:100%;aspect-ratio:4/5;background:var(--sage-pale);border-radius:4px;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;}
-.about-portrait::after{content:'CT';font-family:var(--serif);font-size:4rem;font-style:italic;font-weight:300;color:var(--sage);opacity:0.5;}
+.about-portrait{width:100%;aspect-ratio:4/5;background:var(--sage-pale);border-radius:4px;overflow:hidden;margin-bottom:1.5rem;}
 .about-meta{font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-light);line-height:2.4;}
+.about-meta a{color:var(--ink-light);text-decoration:none;transition:color 0.2s;}
+.about-meta a:hover{color:var(--terracotta);}
 .about-heading{font-family:var(--serif);font-size:2.5rem;font-weight:300;font-style:italic;margin-bottom:2rem;color:var(--ink);line-height:1.15;}
 .about-text{font-size:15px;line-height:1.95;color:var(--ink-mid);}
 .about-text p+p{margin-top:1.1rem;}
@@ -149,7 +153,7 @@ footer{border-top:0.5px solid var(--border);padding:2rem 3.5rem;max-width:1200px
   <ul class="nav-links">
     <li><a href="#work">Work</a></li>
     <li><a href="#about">About</a></li>
-    <li><a href="mailto:hello@cmtong.com">Say hello</a></li>
+    <li><a href="mailto:cindytong312@gmail.com">Say hello</a></li>
   </ul>
 </nav>
 
@@ -158,14 +162,14 @@ footer{border-top:0.5px solid var(--border);padding:2rem 3.5rem;max-width:1200px
   <div class="hero-left">
     <p class="hero-kicker">Designer &amp; Builder</p>
     <h1 class="hero-headline">Work made<br>with <em>care</em><br>&amp; curiosity.</h1>
-    <p class="hero-body">I'm Cindy — I build things at the intersection of design, code, and intention. From clinical data tools to AI-powered checkout flows, each project here is something I put real thought into.</p>
+    <p class="hero-body">I'm Cindy. I build things across healthcare, AI, and product. I'm most interested in how technology, designed thoughtfully, can create real outcomes for the people who need it most.</p>
     <a href="#work" class="hero-cta">See the work →</a>
   </div>
   <div class="hero-right">
     <div class="hero-swatch"><span class="hero-swatch-text">ct.</span></div>
     <div class="hero-stat-row">
-      <div class="hero-stat"><div class="hero-stat-n">03</div><div class="hero-stat-l">Projects</div></div>
-      <div class="hero-stat"><div class="hero-stat-n">∞</div><div class="hero-stat-l">More coming</div></div>
+      <div class="hero-stat"><div class="hero-stat-n">04</div><div class="hero-stat-l">Projects</div></div>
+      <div class="hero-stat"><div class="hero-stat-n" style="font-size:1.4rem;">More to come</div></div>
     </div>
   </div>
 </section>
@@ -176,51 +180,23 @@ footer{border-top:0.5px solid var(--border);padding:2rem 3.5rem;max-width:1200px
 <section class="projects" id="work">
   <div class="section-head">
     <h2 class="section-title">Selected work</h2>
-    <span class="section-label">2024 – 2025</span>
+    <span class="section-label">2024 – 2026</span>
   </div>
 
   <div class="project-list">
 
-    <!-- 01 -->
-    <a class="project-item" href="https://stripe-agentic-board.vercel.app/" target="_blank" rel="noopener">
+    <!-- 01 — Trial Match Compass -->
+    <a class="project-item" href="https://compassmatch.lovable.app/intake" target="_blank" rel="noopener">
       <div class="proj-top">
         <div class="proj-num">01</div>
         <div class="proj-body">
           <div class="proj-chips">
-            <span class="chip warm">Collab</span>
-            <span class="chip warm">Agentic AI</span>
-            <span class="chip">Vercel</span>
-          </div>
-          <div class="proj-title">Stripe Agentic Board Checkout</div>
-          <div class="proj-desc">An AI-powered Pinterest-style shopping board with Stripe checkout, built with a friend and shipped on Vercel. An agent browses, curates, and handles real payment flows — where AI thinks, decides, and acts end to end.</div>
-        </div>
-        <div class="proj-right">
-          <span class="proj-arrow">↗</span>
-          <span class="proj-platform">vercel.app</span>
-        </div>
-      </div>
-      <div class="proj-screenshot">
-        <div class="live-badge"><span class="live-dot"></span>Live</div>
-        <!--
-          ADD SCREENSHOT: replace the placeholder below with:
-          <img src="stripe-preview.png" alt="Stripe Agentic Board screenshot">
-        -->
-        <div class="proj-screenshot-placeholder"><span class="ph-text">Add stripe-preview.png here</span></div>
-      </div>
-    </a>
-
-    <!-- 02 -->
-    <a class="project-item" href="https://compassmatch.lovable.app/intake" target="_blank" rel="noopener">
-      <div class="proj-top">
-        <div class="proj-num">02</div>
-        <div class="proj-body">
-          <div class="proj-chips">
-            <span class="chip sage">Lovable</span>
             <span class="chip sage">Health Tech</span>
+            <span class="chip sage">Patient-Facing</span>
             <span class="chip">Product</span>
           </div>
           <div class="proj-title">Trial Match Compass</div>
-          <div class="proj-desc">Connects patients to nearby clinical trials based on their health data. Built on Lovable, this tool makes the complex process of finding the right trial feel human and approachable — starting with a thoughtful intake flow.</div>
+          <div class="proj-desc">Connects patients to nearby clinical trials based on their health data. A prototype built with enterprise data privacy in mind from the start, no patient data is stored or persisted. The intake flow and matching logic are the proof of concept; compliance scaffolding would come with institutional deployment.</div>
         </div>
         <div class="proj-right">
           <span class="proj-arrow">↗</span>
@@ -229,23 +205,19 @@ footer{border-top:0.5px solid var(--border);padding:2rem 3.5rem;max-width:1200px
       </div>
       <div class="proj-screenshot">
         <div class="live-badge"><span class="live-dot"></span>Live</div>
-        <!--
-          ADD SCREENSHOT: replace the placeholder below with:
-          <img src="compass-preview.png" alt="Trial Match Compass screenshot">
-        -->
-        <div class="proj-screenshot-placeholder"><span class="ph-text">Add compass-preview.png here</span></div>
+        <img src="images/compass-preview.png" alt="Trial Match Compass screenshot">
       </div>
     </a>
 
-    <!-- 03 -->
+    <!-- 02 - Phase I Dashboard -->
     <div class="project-item" style="cursor:default;">
       <div class="proj-top">
-        <div class="proj-num">03</div>
+        <div class="proj-num">02</div>
         <div class="proj-body">
           <div class="proj-chips">
             <span class="chip gold">Work Project</span>
             <span class="chip gold">Clinical Ops</span>
-            <span class="chip">Microsoft Teams</span>
+            <span class="chip">Power BI</span>
           </div>
           <div class="proj-title">Phase I Trial Slot Dashboard</div>
           <div class="proj-desc">A real-time clinical trial management dashboard built for UCLA Hem/Onc, embedded inside Microsoft Teams. Tracks open slots across cancer cohorts, maps protocols to investigators, and gives the care coordination team exactly what they need at a glance.</div>
@@ -257,13 +229,57 @@ footer{border-top:0.5px solid var(--border);padding:2rem 3.5rem;max-width:1200px
       </div>
       <div class="proj-screenshot">
         <div class="internal-badge">Internal tool</div>
-        <!--
-          ADD SCREENSHOT: replace the placeholder below with:
-          <img src="dashboard_redacted.png" alt="Phase I Trial Slot Dashboard">
-        -->
-        <div class="proj-screenshot-placeholder"><span class="ph-text">Add dashboard_redacted.png here</span></div>
+        <img src="images/dashboard-preview.png" alt="Phase I Trial Slot Dashboard screenshot">
       </div>
     </div>
+
+    <!-- 03 - BRIDGE -->
+    <a class="project-item" href="https://bridge-md.vercel.app/" target="_blank" rel="noopener">
+      <div class="proj-top">
+        <div class="proj-num">03</div>
+        <div class="proj-body">
+          <div class="proj-chips">
+            <span class="chip sage">Health Tech</span>
+            <span class="chip warm">Agentic AI</span>
+            <span class="chip gold">Social Impact</span>
+            <span class="chip warm">Collab</span>
+          </div>
+          <div class="proj-title">BRIDGE</div>
+          <div class="proj-desc">An AI-powered specialist matching tool built for underserved community clinics. Rooted in market research on locum tenens credentialing gaps, BRIDGE connects clinic coordinators to available specialists in minutes, not weeks, reducing a 6-week referral process to under a minute. Built for the clinics that need it most.</div>
+        </div>
+        <div class="proj-right">
+          <span class="proj-arrow">↗</span>
+          <span class="proj-platform">vercel.app</span>
+        </div>
+      </div>
+      <div class="proj-screenshot">
+        <div class="live-badge"><span class="live-dot"></span>Live</div>
+        <img src="images/bridge-preview.png" alt="BRIDGE specialist matching screenshot">
+      </div>
+    </a>
+
+    <!-- 04 - Stripe Agentic Board -->
+    <a class="project-item" href="https://stripe-agentic-board.vercel.app/" target="_blank" rel="noopener">
+      <div class="proj-top">
+        <div class="proj-num">04</div>
+        <div class="proj-body">
+          <div class="proj-chips">
+            <span class="chip warm">Collab</span>
+            <span class="chip warm">Agentic AI</span>
+          </div>
+          <div class="proj-title">Stripe Agentic Board Checkout</div>
+          <div class="proj-desc">An AI-powered Pinterest-style shopping board with Stripe checkout, built with a friend and shipped on Vercel. An agent browses, curates, and handles real payment flows, where AI thinks, decides, and acts end to end.</div>
+        </div>
+        <div class="proj-right">
+          <span class="proj-arrow">↗</span>
+          <span class="proj-platform">vercel.app</span>
+        </div>
+      </div>
+      <div class="proj-screenshot">
+        <div class="live-badge"><span class="live-dot"></span>Live</div>
+        <img src="images/stripepinterest-preview.png" alt="Stripe Agentic Board screenshot">
+      </div>
+    </a>
 
   </div>
 </section>
@@ -276,7 +292,7 @@ footer{border-top:0.5px solid var(--border);padding:2rem 3.5rem;max-width:1200px
       <div class="pillar">
         <div class="pillar-icon">◇</div>
         <div class="pillar-name">Intention</div>
-        <div class="pillar-body">Every decision has a reason. I don't ship things I wouldn't stand behind.</div>
+        <div class="pillar-body">Every decision has a reason. Tangible impact is my guiding reason.</div>
       </div>
       <div class="pillar">
         <div class="pillar-icon">◇</div>
@@ -286,7 +302,7 @@ footer{border-top:0.5px solid var(--border);padding:2rem 3.5rem;max-width:1200px
       <div class="pillar">
         <div class="pillar-icon">◇</div>
         <div class="pillar-name">Curiosity</div>
-        <div class="pillar-body">The best projects start with a genuine question, not a brief.</div>
+        <div class="pillar-body">The best projects start with a genuine question, not about what to build, but who it's for and why it matters.</div>
       </div>
     </div>
   </div>
@@ -295,28 +311,21 @@ footer{border-top:0.5px solid var(--border);padding:2rem 3.5rem;max-width:1200px
 <!-- ABOUT -->
 <section class="about" id="about">
   <div class="about-aside">
-    <div class="about-portrait"></div>
+    <div class="about-portrait"><img src="images/cindy-headshot.png" alt="Cindy Tong" style="width:100%;height:100%;object-fit:cover;border-radius:4px;"></div>
     <div class="about-meta">
       Cindy Tong<br>
       Los Angeles, CA<br>
-      Open to collabs<br>
-      cmtong.com
+      MBA, UCLA Anderson, 2026<br>
+      <a href="mailto:cindytong312@gmail.com">cindytong312@gmail.com</a><br>
+      <a href="https://www.linkedin.com/in/cindy-tong" target="_blank" rel="noopener">linkedin.com/in/cindy-tong</a>
     </div>
   </div>
   <div class="about-main">
     <h2 class="about-heading">A little about<br>how I work</h2>
     <div class="about-text">
-      <p>I'm Cindy. I build things across healthcare, AI, and product — sometimes alone, sometimes with people I trust. My projects range from clinical ops tools used in real hospital settings to consumer-facing apps exploring what AI can do.</p>
-      <p>What stays constant is that <em>I take the work seriously.</em> Not in a precious way, but in the way where I keep iterating until it feels right — whether that's a dashboard a care team uses daily or a checkout flow powered by an agent.</p>
-      <p>I'm drawn to problems that sit across disciplines. That's where I do my best work.</p>
-    </div>
-    <div class="about-divider"></div>
-    <div class="skills-row">
-      <span class="skill-tag">Product design</span>
-      <span class="skill-tag">Frontend</span>
-      <span class="skill-tag">AI / agents</span>
-      <span class="skill-tag">Health tech</span>
-      <span class="skill-tag">Prototyping</span>
+      <p>I'm Cindy. I build things across healthcare, AI, and product, sometimes alone, sometimes with people I trust. My projects range from clinical ops tools prototyped in real hospital settings to consumer-facing apps exploring what agentic AI can do.</p>
+      <p>What stays constant is the intentionality behind every decision. I think carefully about the person on the other end, the care coordinator who needs the right information in three seconds, the patient navigating a system that wasn't designed for them, the shopper whose trust an AI agent has to earn before it acts on their behalf. I keep iterating until it feels right.</p>
+      <p>I'm drawn to problems that live across disciplines, where clinical rigor and product thinking have to coexist. That tension is where I do my best work.</p>
     </div>
   </div>
 </section>
@@ -325,7 +334,7 @@ footer{border-top:0.5px solid var(--border);padding:2rem 3.5rem;max-width:1200px
   <span class="footer-name">Cindy Tong</span>
   <div class="footer-links">
     <a href="https://www.linkedin.com/in/cindy-tong" target="_blank" rel="noopener">LinkedIn</a>
-    <a href="mailto:hello@cmtong.com">Email</a>
+    <a href="mailto:cindytong312@gmail.com">Email</a>
   </div>
 </footer>
 
