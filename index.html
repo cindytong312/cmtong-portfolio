@@ -24,7 +24,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .nav-logo{font-family:var(--serif);font-size:1.1rem;font-weight:300;letter-spacing:0.04em;color:var(--ink);text-decoration:none;}
 .nav-logo em{font-style:italic;color:var(--terracotta);}
 .nav-links{display:flex;gap:2.5rem;list-style:none;}
-.nav-links a{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-light);text-decoration:none;transition:color 0.25s;}
+.nav-links a{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-light);text-decoration:none;transition:color 0.25s;font-weight:500;}
 .nav-links a:hover{color:var(--terracotta);}
 
 /* HERO */
@@ -34,7 +34,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .hero-headline{font-family:var(--serif);font-size:clamp(3.2rem,5.5vw,5rem);font-weight:300;line-height:1.1;letter-spacing:-0.01em;margin-bottom:2rem;}
 .hero-headline em{font-style:italic;color:var(--terracotta);}
 .hero-body{font-size:15px;line-height:1.9;color:var(--ink-mid);max-width:400px;margin-bottom:3rem;}
-.hero-cta{display:inline-flex;align-items:center;gap:0.75rem;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--terracotta);padding-bottom:4px;transition:color 0.2s,gap 0.2s;}
+.hero-cta{display:inline-flex;align-items:center;gap:0.75rem;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--terracotta);padding-bottom:4px;transition:color 0.2s,gap 0.2s;font-weight:500;}
 .hero-cta:hover{color:var(--terracotta);gap:1.25rem;}
 .hero-cta-row{display:flex;align-items:center;gap:2rem;flex-wrap:wrap;}
 .hero-cta-secondary{font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-light);text-decoration:none;transition:color 0.2s;}
@@ -68,15 +68,18 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .proj-top{display:grid;grid-template-columns:56px 1fr 180px;gap:2.5rem;align-items:start;margin-bottom:1.75rem;}
 .proj-num{font-family:var(--serif);font-size:2rem;font-style:italic;font-weight:300;color:var(--border);line-height:1.2;padding-top:0.2rem;}
 .proj-chips{display:flex;gap:0.5rem;margin-bottom:0.75rem;flex-wrap:wrap;}
-.chip{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;padding:3px 10px;border:0.5px solid var(--border);color:var(--ink-light);border-radius:2px;}
+.chip{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;padding:3px 10px;border:0.5px solid var(--terracotta-light);color:var(--terracotta);border-radius:2px;}
 .chip.warm{border-color:var(--terracotta-light);color:var(--terracotta);}
 .chip.sage{border-color:var(--sage);color:var(--sage);}
 .chip.gold{border-color:var(--gold);color:var(--gold);}
-.proj-title{font-family:var(--serif);font-size:1.5rem;font-weight:400;line-height:1.15;margin-bottom:0.5rem;}
+.chip.bright{border-color:var(--terracotta);color:var(--terracotta);}
+.chip.red{border-color:#b3402c;color:#b3402c;}
+.chip.gold-fill{border-color:var(--gold);color:var(--gold);}
+.proj-title{font-family:var(--serif);font-size:1.5rem;font-weight:600;line-height:1.15;margin-bottom:0.5rem;}
 .proj-desc{font-size:13px;color:var(--ink-light);line-height:1.7;max-width:500px;}
 .proj-right{display:flex;flex-direction:column;align-items:flex-end;gap:0.75rem;padding-top:0.2rem;}
 .proj-arrow{font-size:1.2rem;color:var(--terracotta);transition:transform 0.2s;line-height:1;}
-.proj-platform{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--border);}
+.proj-platform{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-light);}
 
 /* SCREENSHOT PREVIEWS */
 .proj-screenshot{margin-left:calc(56px + 2.5rem);border-radius:6px;border:0.5px solid var(--border);overflow:hidden;position:relative;}
@@ -115,7 +118,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 footer{border-top:0.5px solid var(--border);padding:2rem 3.5rem;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;}
 .footer-name{font-family:var(--serif);font-size:1rem;font-style:italic;font-weight:300;color:var(--ink-mid);}
 .footer-links{display:flex;gap:2rem;}
-.footer-links a{font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-light);text-decoration:none;transition:color 0.2s;}
+.footer-links a{font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-light);text-decoration:none;transition:color 0.2s;font-weight:500;}
 .footer-links a:hover{color:var(--terracotta);}
 
 /* ANIMATIONS */
@@ -169,7 +172,7 @@ footer{border-top:0.5px solid var(--border);padding:2rem 3.5rem;max-width:1200px
     <div class="hero-swatch"><span class="hero-swatch-text">ct.</span></div>
     <div class="hero-stat-row">
       <div class="hero-stat"><div class="hero-stat-n">04</div><div class="hero-stat-l">Projects</div></div>
-      <div class="hero-stat"><div class="hero-stat-n" style="font-size:1.4rem;">More to come</div></div>
+      <div class="hero-stat" style="display:flex;align-items:center;justify-content:flex-start;"><div class="hero-stat-n" style="font-size:1.4rem;margin-bottom:0;">More to come</div></div>
     </div>
   </div>
 </section>
@@ -191,9 +194,9 @@ footer{border-top:0.5px solid var(--border);padding:2rem 3.5rem;max-width:1200px
         <div class="proj-num">01</div>
         <div class="proj-body">
           <div class="proj-chips">
-            <span class="chip sage">Health Tech</span>
-            <span class="chip sage">Patient-Facing</span>
-            <span class="chip">Product</span>
+            <span class="chip">Health Tech</span>
+            <span class="chip">AI Matching</span>
+            <span class="chip">Patient-Facing</span>
           </div>
           <div class="proj-title">Trial Match Compass</div>
           <div class="proj-desc">Connects patients to nearby clinical trials based on their health data. A prototype built with enterprise data privacy in mind from the start, no patient data is stored or persisted. The intake flow and matching logic are the proof of concept; compliance scaffolding would come with institutional deployment.</div>
@@ -215,12 +218,12 @@ footer{border-top:0.5px solid var(--border);padding:2rem 3.5rem;max-width:1200px
         <div class="proj-num">02</div>
         <div class="proj-body">
           <div class="proj-chips">
-            <span class="chip gold">Work Project</span>
-            <span class="chip gold">Clinical Ops</span>
+            <span class="chip">Clinical Ops</span>
             <span class="chip">Power BI</span>
+            <span class="chip">Work Project</span>
           </div>
           <div class="proj-title">Phase I Trial Slot Dashboard</div>
-          <div class="proj-desc">A real-time clinical trial management dashboard built for UCLA Hem/Onc, embedded inside Microsoft Teams. Tracks open slots across cancer cohorts, maps protocols to investigators, and gives the care coordination team exactly what they need at a glance.</div>
+          <div class="proj-desc">A real-time clinical trial management dashboard embedded inside Microsoft Teams. Tracks open slots across cancer cohorts, maps protocols to investigators, and gives the care coordination team exactly what they need at a glance.</div>
         </div>
         <div class="proj-right">
           <span class="proj-arrow" style="opacity:0.25;">—</span>
@@ -239,10 +242,11 @@ footer{border-top:0.5px solid var(--border);padding:2rem 3.5rem;max-width:1200px
         <div class="proj-num">03</div>
         <div class="proj-body">
           <div class="proj-chips">
-            <span class="chip sage">Health Tech</span>
-            <span class="chip warm">Agentic AI</span>
-            <span class="chip gold">Social Impact</span>
-            <span class="chip warm">Collab</span>
+            <span class="chip">Health Tech</span>
+            <span class="chip">Clinical Ops</span>
+            <span class="chip">Agentic AI</span>
+            <span class="chip">Social Impact</span>
+            <span class="chip">Collab</span>
           </div>
           <div class="proj-title">BRIDGE</div>
           <div class="proj-desc">An AI-powered specialist matching tool built for underserved community clinics. Rooted in market research on locum tenens credentialing gaps, BRIDGE connects clinic coordinators to available specialists in minutes, not weeks, reducing a 6-week referral process to under a minute. Built for the clinics that need it most.</div>
@@ -264,11 +268,12 @@ footer{border-top:0.5px solid var(--border);padding:2rem 3.5rem;max-width:1200px
         <div class="proj-num">04</div>
         <div class="proj-body">
           <div class="proj-chips">
-            <span class="chip warm">Collab</span>
-            <span class="chip warm">Agentic AI</span>
+            <span class="chip">Agentic AI</span>
+            <span class="chip">Consumer-Facing</span>
+            <span class="chip">Collab</span>
           </div>
           <div class="proj-title">Stripe Agentic Board Checkout</div>
-          <div class="proj-desc">An AI-powered Pinterest-style shopping board with Stripe checkout, built with a friend and shipped on Vercel. An agent browses, curates, and handles real payment flows, where AI thinks, decides, and acts end to end.</div>
+          <div class="proj-desc">An AI-powered Pinterest-style shopping board with Stripe checkout. An agent browses, curates, and handles real payment flows, where AI thinks, decides, and acts end to end.</div>
         </div>
         <div class="proj-right">
           <span class="proj-arrow">↗</span>
